@@ -1,0 +1,29 @@
+.notification{
+  position: absolute;
+  right: 42px;
+  top: 142px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 6px rgba(0,0,0, 0.16);
+  z-index: 2;
+  padding: 12px;
+  padding-right: 30px;
+
+  .notification-dismiss {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    span{
+      color: #666666;
+      font-size: 11px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.no-notification{
+  background-color: transparent;
+  position: relative;
+  z-index: -9;
+}

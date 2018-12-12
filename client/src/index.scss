@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("https://c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI";
+  font-size: 13px;
+}

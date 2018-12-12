@@ -1,0 +1,110 @@
+$navItemHeight: 48px;
+
+.topBar-container{
+  height: 48px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #000F5A;
+  .topBar-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 16px;
+    .topBar-item-text {
+      flex-grow: 1;
+      line-height: $navItemHeight;
+      font-size: 15px;
+      font-weight: normal;
+      color: white;
+      &.title {
+        font-weight: bold;
+      }
+    }
+  }
+  .topBar-right{
+    display: flex;
+    align-items: center;
+    .feedback-button{
+      color: white;
+    }
+    .ms-Button-icon {
+      color: white;
+    }
+    .eth-account-button{
+      .eth-account-text{
+        color: white;
+        margin-right: 12px;
+      }
+    }
+  }
+}
+
+
+  .eth-account-callout{
+    .eth-account-callout-content,
+    .eth-no-account-callout-content{
+      display: flex;
+      flex-direction: column;
+      .callout-top{
+        display: flex;
+        flex-direction: row;
+        margin-left: 28px;
+        margin-right: 28px;
+        margin-top: 26px;
+        margin-bottom: 28px;
+        .callout-left{
+          margin-right: 14px;
+        }
+        .callout-right{
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          h2{
+            font-size: 18px;
+          }
+          p{
+            margin-top: 4px;
+            font-size: 11px;
+          }
+        }
+      }
+      .callout-bottom{
+        border-top: 1px solid #EAEAEA;
+        .ms-Button.ms-Button--default.change-alias-button{
+          width: 100%;
+          background-color: transparent;
+          text-align: left;
+          padding-left: 32px;
+          height: 48px;
+          .ms-Button-label{
+            margin: 0;
+            font-weight: 100;
+          }
+        }
+      }
+    }
+  }
+
+.eth-account-button{
+  .ms-Image.logout-icon{
+    .ms-Image-image{
+      width: 20px;
+    }
+  }
+}
+
+.eth-no-account-callout-content{
+  .callout-left{
+    .warningIcon{
+      width: 72px;
+      height: 72px;
+    }
+  }
+  .callout-right{
+    h2 {
+      margin-bottom: 10px;
+    }
+  }
+}

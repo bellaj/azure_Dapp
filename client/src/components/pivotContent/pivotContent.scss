@@ -1,0 +1,68 @@
+.pivot-container{
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  .ms-Pivot{
+    .ms-Button.ms-Button--command.ms-Pivot-link{
+      padding-left: 0;
+      &::before{
+        left: 0;
+        top: 22px;
+        height: 12px;
+      }
+    }
+
+  }
+  .pivot-content-container{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    .description-container{
+      margin-bottom: 14px;
+    }
+    .detailslist-container{
+      margin-top: 20px;
+      overflow: auto;
+      .ms-DetailsList{
+        .defaultColumn {
+          font-size: 13px;
+        }
+        .right-align-column-large{
+          .ms-DetailsHeader-cellTitle{
+            justify-content: flex-end;
+            overflow: visible;
+            white-space: normal;
+            text-align: right;
+            line-height: 14px;
+            font-size: 12px;
+            i {
+              line-height: 32px;
+            }
+          }
+        }
+        .right-align-column-normal{
+          .ms-DetailsHeader-cellTitle{
+            justify-content: flex-end;
+            overflow: visible;
+            white-space: initial;
+            text-align: right;
+            font-size: 13px;
+          }
+        }
+        .right-align{
+          text-align: right;
+        }
+        .ms-DetailsRow-cell{
+          font-size: 11px;
+          .yourVoteIconSize{
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}

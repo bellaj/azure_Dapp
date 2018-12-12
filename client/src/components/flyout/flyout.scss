@@ -1,0 +1,44 @@
+.custom-flyout{
+  .ms-Panel-header,
+  .ms-Panel-content{
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-top: 4px;
+
+  }
+  .ms-Panel-header{
+    .ms-Panel-headerText{
+      font-weight: bold;
+    }
+  }
+  .panel-content-container{
+    .panel-content-box{
+      margin-top: 28px;
+      margin-bottom: 40px;
+    }
+  }
+  .ms-Panel-footer{
+    height: 72px;
+    border-top: 1px solid #EAEAEA;
+    .ms-Panel-footerInner{
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+  .custom-panel-footer{
+    display: flex;
+    align-items: center;
+    .custom-panel-footer-primary{
+      margin-right: 8px;
+      background-color: #3449AA;
+      color: #FFFFFF;
+      &:hover{
+        background-color: #00188F;
+      }
+    }
+    .ms-Button--primary.is-disabled{
+      background-color: #3449AA;
+      opacity: 0.4;
+    }
+  }
+}

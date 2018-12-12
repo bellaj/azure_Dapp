@@ -1,0 +1,41 @@
+.custom-searchBox{
+  width: 264px;
+  height: 32px;
+}
+.commandBarRowContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100%;
+  .custom-commandBar{
+    background-color: transparent;
+    flex: 1;
+    height: 32px;
+    padding-left: 4px;
+    .addButtonStyle{
+      padding-right: 8px;
+      border-right: 1px solid black;
+      margin-right: 8px;
+      background-clip: content-box;
+      .ms-Button-icon{
+        margin-left: 8px;
+      }
+      .ms-Button-textContainer{
+        .ms-Button-label{
+          margin-right: 8px;
+        }
+      }
+    }
+    .customIconButton,
+    .customIconButton-disabled{
+      height: 16px;
+      width: 16px;
+    }
+    .customIconButton-disabled{
+      opacity: 0.4;
+    }
+    .rescind-button{
+      margin-left: 8px;
+    }
+  }
+}

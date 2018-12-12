@@ -1,0 +1,63 @@
+{
+    "components": [
+      {
+        "component": {
+            "npmjs.org": {
+            "name": "abab",
+            "version": "2.0.0"
+            }
+        },
+        "license": "BSD-3-Clause",
+        "usageDetails": "Used for base64 encoding/decoding"
+      },
+      {
+        "component": {
+            "npmjs.org": {
+              "name": "electron-to-chromium",
+              "version": "1.3.70"
+            }
+          },
+          "usageDetails": "Provides a mapping of Electron versions to the Chromium version that it uses"
+      },
+      {
+        "component": {
+            "npmjs.org": {
+              "name": "ethereumjs-tx",
+              "version": "1.3.4"
+            }
+          },
+          "usageDetails": "Used to create, manipulate and sign Ethereum transactions",
+          "integrationApproach": "Dynamic"
+      },
+      {
+        "component": {
+            "npmjs.org": {
+              "name": "ethereumjs-util",
+              "version": "5.2.0"
+            }
+          },
+          "usageDetails": "Utility functions for Ethereum",
+          "integrationApproach": "Dynamic"
+      },
+      {
+        "component": {
+            "npmjs.org": {
+              "name": "rlp",
+              "version": "2.1.0"
+            }
+          },
+          "usageDetails": "Recurisve Length Prefixing for serializing objects in Ethereum",
+          "integrationApproach": "Dynamic"
+      },
+      {
+        "component": {
+          "npmjs.org": {
+            "name": "web3",
+            "version": "0.20.6"
+          }
+        },
+        "usageDetails": "Used to query and submit transactions to the Ethereum blockchain",
+        "integrationApproach": "Dynamic"
+      }
+    ]
+  }

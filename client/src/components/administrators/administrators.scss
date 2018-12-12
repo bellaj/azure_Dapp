@@ -1,0 +1,38 @@
+.administrators-page{
+  display: flex;
+  margin: 40px 64px 0px 44px;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  .change-alias-button{
+    padding: 0;
+    padding-bottom: 4px;
+    align-self: flex-start;
+    color: #4388C8;
+    background-color: transparent;
+    .ms-Button-flexContainer{
+      justify-content: flex-start;
+      .ms-Button-label{
+        margin: 0;
+      }
+    }
+  }
+  .status{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    i {
+      margin-right: 4px;
+    }
+  }
+  .good{
+    color: #169C59;
+  }
+  .neutral{
+    color: #0077FF;
+  }
+  .blocked{
+    color: #E7732B;
+  }
+}

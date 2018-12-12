@@ -1,0 +1,18 @@
+.description-container-center{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 26px;
+}
+
+.description-container,
+.description-container-candidates{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.description-container-candidates{
+  margin-bottom: 31px;
+}

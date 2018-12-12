@@ -1,0 +1,108 @@
+$leftNavBgColor: #242628;
+$leftNavFontColor: #000;
+$leftNavFontHoverColor: #000;
+$leftNavLinkHoverBgColor: #D6D6D3;
+$leftNavExpandedWidth: 224px;
+$navItemHeight: 48px;
+$navItemWidth: 48px;
+
+.left-nav {
+  background: #F1F0EF;
+  flex-grow: 1;
+
+  $navItemHeight: 48px;
+
+  .leftnav-item-container {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-shrink: 0;
+    align-items: center;
+
+    .leftnav-item-icon_16 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: $navItemHeight;
+      width: $navItemWidth;
+      fill: #000;
+
+      > img {
+        height: 1.5em;
+        width: 1.5em;
+      }
+    }
+
+    .leftnav-item-icon_48 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: $navItemHeight;
+      width: $navItemWidth;
+
+      > img {
+        height: 31.56px;
+        width: 31.5px;
+        border-radius: 3px;
+      }
+    }
+
+    .leftnav-item-text {
+      display: none;
+      flex-grow: 1;
+      line-height: $navItemHeight;
+      font-size: 15px;
+      font-weight: normal;
+      &.title {
+        font-weight: bold;
+      }
+    }
+  }
+  // Style overrides if the item is a link or the hamburger
+  a.leftnav-item-container,
+  .leftnav-item-container.hamburger {
+    cursor: pointer;
+    color: $leftNavFontColor;
+    text-decoration: none;
+
+    img {
+      opacity: 1;
+    }
+
+    &.active,
+    &:hover,
+    &:focus {
+      color: $leftNavFontHoverColor;
+      background-color: $leftNavLinkHoverBgColor;
+
+      img {
+        opacity: 1;
+      }
+    }
+  }
+
+  &.expanded {
+    width: $leftNavExpandedWidth;
+
+    .leftnav-item-container .leftnav-item-text {
+      display: flex;
+      padding-left: 5px;
+    }
+  }
+}
+
+.fluent-callout {
+  width: 250px;
+  .feedback-buttons {
+    width: 100%;
+    border: none;
+  }
+}
+
+.feedbackButton {
+  background-color: transparent;
+  color: #FFFFFF;
+  &:hover {
+    background-color: transparent;
+    color: #FFFFFF;
+  }
+}

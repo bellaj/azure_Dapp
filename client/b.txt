@@ -1,0 +1,5 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0   4340   760 ?        Ss   20:26   0:00 sh -c cd client && node run.js "${listenPort}" "${consortiumId}" "${azureStorageAccount}" "${azureStorageAccessKey}" "${containerName}" "${identityBlobPrefix}" "${ethRpcPort}" "${validatorListBlobName}" "${paritySpecBlobName}" "${valSetContractBlobName}" "${adminContractBlobName}" "${adminContractABIBlobName}" "${adminSiteLogFile}" "${rpcEndpoint}"
+root         6  4.5  3.9 1474368 326380 ?      Rl   20:26   2:27 node run.js 3001 0 ethmozapustore n/3i7PdERFPyY79YfgsT4dm+wYJ91mfezJpNSOZv3Qp6Gl1PZd6nJiaS3iuuy8u2gId54HwmgSw8ydPDala+qw== poa-config passphrase- 8540 AddressList.json spec.json SimpleValidatorSet.sol AdminValidatorSet.sol AdminValidatorSet.sol.abi /var/log/adminsite/etheradmin.log http://ethmozapu-dns-reg1.northeurope.cloudapp.azure.com:8540
+root       196  0.1  0.0  20480  3524 pts/0    Ss   21:12   0:00 /bin/bash
+root       412  0.0  0.0  17504  2112 pts/0    R+   21:21   0:00 ps -aux

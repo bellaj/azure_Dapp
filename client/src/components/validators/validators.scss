@@ -1,0 +1,32 @@
+.validators-page{
+  display: flex;
+  margin: 40px 64px 20px 44px;
+  flex-direction: column;
+  flex: 1;
+  .no-validators{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex: 1;
+    .custom-actionButton{
+      background-color: #3449AA;
+      border-radius: 4px;
+      padding: 0 27px;
+      color: white;
+      .ms-Button-icon{
+        color: white;
+      }
+    }
+    .addValidatorsMessage{
+      .syncIcon{
+        color: #0078D7;
+        margin-right: 8px;
+      }
+    }
+  }
+  .validators-list{
+    margin-top: 40px;
+  }
+}
